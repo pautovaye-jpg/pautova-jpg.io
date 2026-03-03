@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ремонт стиральных машин — Белгород | Сапронов Роман</title>
+  <meta name="description" content="Профессиональный ремонт стиральных машин в Белгороде. Самозанятый мастер Сапронов Роман Алексеевич." />
+  <style>
+    :root{
+      --bg: #0b1020;
+      --surface: #141b2a;
+      --card: #1e2540;
+      --text: #e9eaf7;
+      --muted: #a5b0d0;
+      --primary: #4f87ff;
+      --accent: #7bd389;
+      --radius: 14px;
+    }
+    * { box-sizing: border-box; }
+    html, body { margin: 0; padding: 0; font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif; color: var(--text); background: #0b1020; }
+    a { color: inherit; text-decoration: none; }
+
+    .container { max-width: 1100px; padding: 0 20px; margin: 0 auto; }
+
+    .site-header { background: linear-gradient(135deg, #0f1230 0%, #1a1f3a 60%, #1b2a4a 100%); padding: 26px 0; }
+    .header-inner { display:flex; align-items:center; justify-content: space-between; gap: 16px; }
+    .logo{ display:flex; align-items:center; gap:12px; }
+    .logo-circle{ width:34px; height:34px; border-radius:50%; background: radial-gradient(circle at 30% 30%, #fff 0 15%, transparent 16%), #4f87ff; }
+    .logo-text{ font-weight: 700; color:#fff; font-size:1.05rem; }
+
+    .main-nav{ display:flex; gap:28px; padding: 14px 0; border-bottom:1px solid rgba(255,255,255,.08); }
+    .nav-link{ color:#eaefff; }
+
+    .content-grid{ display:grid; grid-template-columns: 1.1fr 0.9fr; gap: 28px; align-items:center; padding: 40px 0 20px; }
+
+    .hero{ display:grid; grid-template-columns:1fr 1fr; gap:26px; }
+    .hero h1{ font-size:2.2rem; margin:0 0 10px; line-height:1.08; }
+    .subtitle{ color: var(--muted); font-size:1.05rem; margin-bottom:18px; }
+    .hero-visual{ height:260px; border-radius: var(--radius); background: linear-gradient(135deg, #1e2a63 0%, #1b3a8a 60%, #0b6aa8 100%); box-shadow: inset 0 0 60px rgba(255,255,255,.05); }
+
+    .cta-row{ display:flex; gap:12px; flex-wrap:wrap; }
+
+    .service-card-grid{ padding:20px 0 40px; display:grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap:18px; }
+    .service-card{ display:flex; align-items:flex-start; gap:14px; padding:14px; border-radius:12px; background: rgba(255,255,255,.04); border:1px solid rgba(255,255,255,.08); }
+    .service-card .icon{ font-size:26px; width:34px; height:34px; display:flex; align-items:center; justify-content:center; border-radius:9px; background: rgba(79,135,255,.15); }
+    .service-card h3{ margin:0 0 6px; font-size:1.05rem; }
+    .service-card p{ margin:0; color:var(--muted); }
+
+    .about-section{ padding: 20px 0 60px; background: linear-gradient(135deg, rgba(20,26,50,.5), rgba(20,26,50,.2)); border-radius: 12px; padding: 28px; }
+
+    .contact-grid{ display:grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap:14px; }
+    .contact-item{ background: rgba(255,255,255,.04); padding:12px 14px; border-radius:10px; border:1px solid rgba(255,255,255,.08); }
+    .divider{ border:0; height:1px; background: rgba(255,255,255,.08); margin:18px 0; }
+
+    .quote-form{ background: rgba(255,255,255,.04); padding:20px; border-radius:12px; border:1px solid rgba(255,255,255,.08); display:flex; flex-direction:column; gap:12px; }
+    .form-row{ display:flex; flex-direction:column; gap:6px; }
+    input, textarea{ padding:12px; border-radius:8px; border:1px solid rgba(255,255,255,.25); background: rgba(0,0,0,.25); color:#fff; outline:none; }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="logo" aria-label="Логотип">
+        <span class="logo-circle"></span>
+        <span class="logo-text">Ремонт стиральных машин</span>
+      </div>
+      <button class="btn-cta cta-mobile" onclick="document.getElementById('contacts').scrollIntoView({behavior:'smooth'});">Связаться</button>
+    </div>
+  </header>
+
+  <nav class="container main-nav" aria-label="Главное меню">
+    <a href="#services" class="nav-link">Услуги</a>
+    <a href="#about" class="nav-link">Об мастере</a>
+    <a href="#contacts" class="nav-link">Контакты</a>
+  </nav>
+
+  <main id="content" class="container content-grid">
+    <section class="hero">
+      <div class="hero-content">
+        <h1>Ремонт стиральных машин в Белгороде</h1>
+        <p class="subtitle">Профессионально, прозрачно и по разумной цене. Работаю как самозанятый мастер — без ИП.</p>
+        <div class="cta-row">
+          <a href="#services" class="btn btn-primary" style="padding:12px 18px; border-radius:999px; display:inline-block; color:#fff; background:#4f87ff; background-image:linear-gradient(135deg,#4f87ff 0%,#2a6cff 100%);">Узнать услуги</a>
+          <a href="#contacts" class="btn btn-outline" style="padding:12px 18px; border-radius:999px; border:1px solid rgba(255,255,255,.5);">Позвонить</a>
+        </div>
+      </div>
+      <div class="hero-visual" aria-label="Иллюстрация стиральной машины"></div>
+    </section>
+
+    <section id="services" class="service-card-grid" aria-label="Услуги">
+      <h2>Услуги</h2>
+      <div class="service-card">
+        <span class="icon" aria-hidden="true">🔧</span>
+        <div>
+          <h3>Диагностика неисправностей</h3>
+          <p>Быстрая проверка модулей, сенсоров и сетевых цепей.</p>
+        </div>
+      </div>
+      <div class="service-card">
+        <span class="icon" aria-hidden="true">💡</span>
+        <div>
+          <h3>Ремонт электронных модулей</h3>
+          <p>Замена компонентов плат и ремонт контроллеров.</p>
+        </div>
+      </div>
+      <div class="service-card">
+        <span class="icon" aria-hidden="true">🧰</span>
+        <div>
+          <h3>Замена узлов и деталей</h3>
+          <p>Замена насосов, фильтров, дренажных систем и т. д.</p>
+        </div>
+      </div>
+      <div class="service-card">
+        <span class="icon" aria-hidden="true">💳</span>
+        <div>
+          <h3>Гарантия и прозрачные цены</h3>
+          <p>Честные расценки, без скрытых платежей, после диагностики — договорённость.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="about-section" aria-label="Об мастере">
+      <h2>О мастере</h2>
+      <p class="lead">
+        Я, <strong>Сапронов Роман Алексеевич</strong>, являюсь самозанятым специалистом по ремонту стиральных машин.
+        Работаю в Белгороде и окрестностях. Гарантирую качественный подход, прозрачные цены и бережное отношение к вашей технике.
+      </p>
+      <div class="badge-row" aria-label="Статус">
+        <span class="badge">Частный мастер</span>
+      </div>
+    </section>
+
+    <section id="contacts" class="contacts-section" aria-label="Контакты">
+      <h2>Контакты</h2>
+      <div class="contact-grid">
+        <div class="contact-item">
+          <div class="label">Телефон</div>
+          <div class="value"><strong>8 920 598-5410</strong></div>
+        </div>
+        <div class="contact-item">
+          <div class="label">ФИО</div>
+          <div class="value"><strong>Сапронов Роман Алексеевич</strong></div>
+        </div>
+        <div class="contact-item">
+          <div class="label">Статус</div>
+          <div class="value">Частный мастер</div>
+        </div>
+      </div>
+
+      <hr class="divider">
+  <footer class="container" style="text-align:center; padding:20px 0;">
+    <p>&copy; 2026 Сапронов Роман Алексеевич. Все права защищены.</p>
+  </footer>
+</body>
+</html>
